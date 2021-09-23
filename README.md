@@ -1,2 +1,3 @@
-# Leetcode_Python
-Leetcode Problems with Python
+# LeetCode Problem Description
+
+This Repo contains answer for LeetCode problems
