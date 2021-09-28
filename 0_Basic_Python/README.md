@@ -44,6 +44,72 @@
   - division operator ( / ) results _Real Number_
   - ' // ' : quotient operator
 
+- List
+
+  - like Arrays in C/Java
+  - basic operations: _append(), remove()_
+  - can initialize like:
+
+    ```python
+    n = 10
+    a = [0] * n
+    print(a)
+
+    #Result:
+
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ```
+
+  - Indexing from last elements:
+
+    ```python
+    a = [1, 2, 3, 4, 5]
+    print(a[-1])    # 5
+    print(a[-3])    # 3
+    print(a[-5])    # 1
+    ```
+
+  - **Slicing**: [strt : (**EXCLUSIVE**)end]
+
+    ```python
+    a = [1, 2, 3, 4, 5]
+    print(a[1:3])     # [2, 3]
+    print(a[2:])      # [3, 4, 5]
+    print(a[:])       # [1, 2, 3, 4, 5]
+    ```
+
+  - List Comprehension:
+
+    ```python
+    array = [i for i in range(20) if i % 2 == 1]
+    print(array)
+
+    array = [i * i for i in range(1, 10)]
+    print(array)
+
+    # Results:
+
+    [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+    [1, 4, 9, 16, 25, 36, 49, 64, 81]
+    ```
+
+    ```python
+    # initializing 2-D list n X m
+    n = 3
+    m = 4
+    array = [[0] * m] * n
+    print(array)
+
+    array[1][1] = 5
+    print(array)
+
+
+    # Result:
+
+    [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]]
+    [[0, 5, 0], [0, 5, 0], [0, 5, 0], [0, 5, 0]]
+    ```
+
 2. Conditionals
 3. Repetitives
 4. Functions
