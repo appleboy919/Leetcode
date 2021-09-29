@@ -47,7 +47,6 @@
 - List
 
   - like Arrays in C/Java
-  - basic operations: _append(), remove()_
   - can initialize like:
 
     ```python
@@ -109,6 +108,14 @@
     [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]]
     [[0, 5, 0], [0, 5, 0], [0, 5, 0], [0, 5, 0]]
     ```
+
+  - List Operations:
+    - append(): O(1)
+    - sort([reverse=True]): O(NlogN)
+    - reverse(): O(N)
+    - insert(_index_, _value_): O(N)
+    - count(): O(N)
+    - remove(_value_): O(N)
 
 2. Conditionals
 3. Repetitives
