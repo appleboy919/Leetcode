@@ -117,6 +117,73 @@
     - count(): O(N)
     - remove(_value_): O(N)
 
+- String
+
+  ```python
+  a = 'Hello'
+  b = 'World'
+  print(a + ' ' + b)
+  print(a * 3)
+  print(a[1:3])
+
+  # Result:
+
+  Hello World
+  HelloHelloHello
+  el
+  ```
+
+- Tuple
+
+  - Tuples are **immutable**
+  - Usually used for **Graph** algorithms:
+    - ex) Priority Queue in Dijkstra's algorithm
+
+- Dictionary
+
+  - _Key_ - _Value_ pairs
+  - No orders
+  - _keys()_, _values()_: return list of keys and values
+
+- Set
+
+  - Does not allow duplication
+  - No orders
+
+    ```python
+    data = set([1, 1, 2, 3, 4, 4, 5])
+    print(data)
+
+    # Result:
+
+    {1, 2, 3, 4, 5}
+    ```
+
+  - Operations: _add()_, _update()_, _remove()_, &, |, -
+
+    ```python
+    a = set([1, 2, 3, 4, 5])
+    b = set([3, 4, 5, 6, 7])
+
+    print(a | b)
+    print(a & b)
+    print(a - b)
+
+    a.add(6)
+    print(a)
+
+    b.update([8, 9])
+    print(b)
+
+    # Result:
+
+    {1, 2, 3, 4, 5, 6, 7}
+    {3, 4, 5}
+    {1, 2}
+    {1, 2, 3, 4, 5, 6}
+    {3, 4, 5, 6, 7, 8, 9}
+    ```
+
 2. Conditionals
 3. Repetitives
 4. Functions
