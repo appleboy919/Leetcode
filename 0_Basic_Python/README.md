@@ -219,6 +219,33 @@
   ```
 
 3. Repetitives
+
+- _while_ loop:
+
+```python
+i = 1
+result = 0
+
+while i < 10:
+  result += i
+print(result)
+
+# Result:
+
+55
+```
+
+- _for_ loop:
+
+  ```python
+  for i in range(1, 10):
+    print(i**2, end=' ')
+
+  # Result:
+
+  1 4 9 16 25 36 49 64 81
+  ```
+
 4. Functions
 5. I/O
 6. Libraries
