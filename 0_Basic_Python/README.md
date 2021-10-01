@@ -185,6 +185,39 @@
     ```
 
 2. Conditionals
+
+- _in_/_not in_ operator
+- conditional expression:
+
+  ```python
+  a = 3
+  result = "odd" if a%2 == 1 else "even"
+  print(result)
+
+  b = [1, 2, 3, 4, 5, 4, 1]
+  remove_set = {1, 4}
+  result = [i for i in b if i not in remove_set]
+
+  print(result)
+
+  # Result:
+
+  odd
+  [2, 3, 5]
+  ```
+
+  - consecutive inequation:
+
+  ```python
+  x = 14
+  if 0 < x < 16:
+    print("correct")
+
+  # Result:
+
+  correct
+  ```
+
 3. Repetitives
 4. Functions
 5. I/O
