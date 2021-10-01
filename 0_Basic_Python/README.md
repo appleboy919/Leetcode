@@ -184,7 +184,7 @@
     {3, 4, 5, 6, 7, 8, 9}
     ```
 
-2. Conditionals
+## 2. Conditionals
 
 - _in_/_not in_ operator
 - conditional expression:
@@ -218,7 +218,7 @@
   correct
   ```
 
-3. Repetitives
+## 3. Repetitives
 
 - _while_ loop:
 
@@ -246,6 +246,37 @@ print(result)
   1 4 9 16 25 36 49 64 81
   ```
 
-4. Functions
-5. I/O
-6. Libraries
+## 4. I/O
+
+(Input)
+
+- _input()_: reads data from user input ==> **slower** than _sys.stdin.readline()_
+- **_list(map(int, input().split()))_** : store multiple integers
+- **_sys.stdin.readline().rstrip()_** : read each line and remove new line
+
+  ```python
+  import sys
+
+  data = sys.stdin.readline().rstrip()
+  print(data)
+  ```
+
+(Output)
+
+- print(_, _, ..) : adds ' ' between each items
+- **f-string**
+
+  ```python
+  a = 1
+
+  print(f'a is {a}')
+
+  # Result:
+
+  a is 1
+  ```
+
+## 5. Libraries
+
+- Standard Libraries:
+  - pr
