@@ -279,4 +279,90 @@ print(result)
 ## 5. Libraries
 
 - Standard Libraries:
-  - pr
+
+  - Built-in Function
+
+    - sum(_iterable_)
+    - min(), max()
+    - eval(_"String Equation"_): returns the result of the String equation
+    - **sorted([_iterable_], [reverse=True], [key=lambda])**
+
+      ```python
+      result = sorted([4, 3, 1, 2])
+      print(result)
+
+      result = sorted([4, 3, 1, 2])
+      print(result)
+
+      result = sorted([('apple', 34), ('banana', 2), ('car', 15)], key = lambda x: x[1])
+
+      # Result:
+
+      [1, 2, 3, 4]
+      [4, 3, 2, 1]
+      [('banana', 2), ('car', 15), ('apple', 34)]
+      ```
+
+    - _iterable_.sort()
+
+  - itertools
+
+    - **permutations(_iterable_, n)**: calculates n permutations from _iterable_
+
+      ```python
+      from itertools import permutations
+
+      data = ['A', 'B', 'C']
+      result = list(permutations(data, 3))
+      print(result)
+
+      # Result:
+
+      [('A', 'B', 'C'), ('A', 'C', 'B'), ('B', 'A', 'C'), ('B', 'C', 'A'), ('C', 'A', 'B'), ('C', 'B', 'A')]
+      ```
+
+      - **combinations(_iterable_, n)**: calculates n combinations from _iterable_
+
+      ```python
+      from itertools import combinations
+
+      data = ['A', 'B', 'C']
+      result = list(permutations(data, 2))
+      print(result)
+
+      # Result:
+
+      [('A', 'B'), ('A', 'C'), ('B', 'C')]
+      ```
+
+    - **product(_iterable_, repeat=n)**: calculates permutations with n-duplicates
+
+      ```python
+      from itertools import product
+
+      data = ['A', 'B', 'C']
+      result = list(product(data, repeat=2))
+      print(result)
+
+      # Result:
+
+      [('A', 'A'), ('A', 'B'), ('A', 'C'), ('B', 'A'), ('B', 'B'), ('B', 'C'), ('C', 'A'), ('C', 'B'), ('C', 'C')]
+      ```
+
+    - **combinations*with_replacement(\_iterable*, n)**: calculates combinations with n-duplicates
+
+      ```python
+      from itertools import combinations_with_replacement
+
+      data = ['A', 'B', 'C']
+      result = list(combinations_with_replacement(data, 2))
+      print(result)
+
+      # Result:
+
+      [('A', 'A'), ('A', 'B'), ('A', 'C'), ('B', 'B'), ('B', 'C'), ('C', 'C')]
+      ```
+
+  - heapq
+    - used for prority queues -->_Min Heap_ (ex. Djikstra's Shortest Path)
+    - adding items _O(NlogN)_ automatically sort the items in the heap
