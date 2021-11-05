@@ -33,8 +33,11 @@
     i = 0
     while i < n:
       remove duplicate item at every iteration
+    ```
 
+    ![Slow iteration](/assets/SlowDelDup.png)
 
+    ```python
     # iterating with skipping some elements --> faster
     i, tIdx = 0   # tIdx to point the next bigger element
     while i < n:
@@ -43,6 +46,8 @@
         - update tIdx for next iteration
             ==> skips elements for faster run time
     ```
+
+    ![Fast iteration](/assets/FastDelDup.png)
 
 - Using **multiple pointers** can help reduce the number of loops
 
