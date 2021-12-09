@@ -1,39 +1,23 @@
 public class MaxConsecutives {
     class Solution {
         public int findMaxConsecutiveOnes(int[] nums) {
-            int idx1, idx2
-            ans = -1;
-            a = b = 0;
-            x = y = 1;
-            for (int i=0;i<nums.length;i++) {
-               if(nums[i]==1) {
-                   a ++;
-                   b ++;
-               }
-                else {
-                    if(x==1) {
-                        if(y==0) {
-                            if(ans < b)
-                                ans = b;
-                            b = 0;
-                            y = 1;
-                        }
-                        a ++;
-                        x --;
-                    }
-                    else if(y==1) {
-                        if(ans < a)
-                            ans = a;
-                        a = 0;
-                        x = 1;
-                        b ++;
-                        y --;
-                    }
+            int z = 0;
+            int ones[] = { 0, 0 };
+            int ans = 0;
+            for (int i = 0; i < nums.length; i++) {
+                if (nums[i] == 0) {
+                    ones[z]++;
+                    if (ones[(z + 1) % 2] > ans)
+                        ans = ones[(z + 1) % 2];
+                    z = (z + 1) % 2;
+                    ones[z] = 0;
+                } else {
+                    ones[0]++;
+                    ones[1]++;
                 }
             }
-            ans = a>ans?a:ans;
-            ans = b>ans?b:ans;
-            return ans;
+            int t = ones[z] > ones[(z + 1) % 2] ? ones[z] : ones[(z + 1) % 2];
+            return ans > t ? ans : t;
         }
     }
 
