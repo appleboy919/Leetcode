@@ -5,6 +5,13 @@
             "name": "Launch Test",
             "request": "launch",
             "mainClass": "Test",
+            "projectName": "Java_edcf25c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "Test",
             "projectName": "Java_5a62d652"
         },
         {
